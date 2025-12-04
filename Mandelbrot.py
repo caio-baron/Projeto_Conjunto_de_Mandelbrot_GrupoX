@@ -37,6 +37,21 @@ def pix_to_z(lp, cp):
 
     return conv
 
+#Com ou sem degradê ?
+while True: # loop até fazer certo
+    escolha = input('Você deseja uma figura com degradê ? (dígite 1 para sim e 0 para não): ')
+    try:
+        degrade = int(escolha)
+        if degrade not in (0, 1):
+            print('Somente aceita-se entradas 0 para não e 1 para sim')
+            
+        else:
+            print('Gerando imagem...')
+            break
+            
+    except ValueError:
+        print('Somente aceita-se entradas 0 para não e 1 para sim')
+    
 # gerando a matriz base da imagem e a normalizando
 matriz_base = np.fromfunction(pix_to_z, (1200, 900))
 matriz_normalizada = matriz_base / 100
@@ -50,7 +65,9 @@ figura_Mapeada = mapa(matriz_normalizada) # Aplica as cores do mapa nos elemento
 imagem_degrade = (figura_Mapeada * 255).astype(np.uint8) # Figura final com degradê
 
 # Visualizando
-imagem_final = Image.fromarray(seca)  # pra ver a com degradê troca seca pela imagem_degrade
+imagem_final = Image.fromarray(seca) # Degradê cinza dificil de ver
+
+if degrade == 1:
+    imagem_final = Image.fromarray(imagem_degrade) # degradê em RGB
 
 imagem_final.show()
-
