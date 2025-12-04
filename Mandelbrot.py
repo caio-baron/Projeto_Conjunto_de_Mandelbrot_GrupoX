@@ -6,7 +6,6 @@ from matplotlib.pyplot import get_cmap
 def fc(z, c):
     return z ** 2 + c
 
-
 # Função de teste mandelbot
 def is_Mandelbrot(c, N):
     M = 2  # valor máximo de convergencia das orbitas
@@ -25,10 +24,8 @@ def is_Mandelbrot(c, N):
     else:
         return False, N - n
 
-
 # Vetorizando o is_mandelbrot
 v_is_Mandelbrot = np.vectorize(is_Mandelbrot)
-
 
 # Definido as partes real e imaginária de um pixel e testando Mandelbrot
 def pix_to_z(lp, cp):
@@ -40,12 +37,10 @@ def pix_to_z(lp, cp):
 
     return conv
 
-
 # gerando a matriz base da imagem e a normalizando
 matriz_base = np.fromfunction(pix_to_z, (1200, 900))
-
 matriz_normalizada = matriz_base / 100
-seca = (matriz_normalizada * 255).astype(np.uint8)  # sem degradê em RGB aqui o degrade está em tons de cinza
+seca = (matriz_normalizada * 255).astype(np.uint8)  # sem degradê em RGB aqui o degradê está em tons de cinza
 
 # Mapeando as cores e gerando o degradê
 mapa = get_cmap('turbo')  # Pega um color map em RGB
@@ -58,3 +53,4 @@ imagem_degrade = (figura_Mapeada * 255).astype(np.uint8) # Figura final com degr
 imagem_final = Image.fromarray(seca)  # pra ver a com degradê troca seca pela imagem_degrade
 
 imagem_final.show()
+
