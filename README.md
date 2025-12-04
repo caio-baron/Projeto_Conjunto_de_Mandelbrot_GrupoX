@@ -9,9 +9,27 @@ Membros:
 ##  Foco do Código
 
 O objetivo principal deste código é a gerar uma figura matemática de um conjunto de Mandelbrot a partir das posições dos pixels 
-em uma imagem de tamanho 900x1200 (essas dimensôes podem ser alteradas no código caso seja desejado).
+em uma imagem de tamanho 900x1200.
 
-## Linguagem utilizada
+## Linguagem utilizada e Bibliotecas
 
-* Linguagem Principal:  Python 3.13 
+* Linguagem Principal:  Python 3.13
+*  Bibliotecas: Numpy, Pillow, Matplotlib
+*  * as versões das bibliotecas utilizadas se encontram no arquivo requirements.txt
+
+## Instalação
+para testar o projeto, siga os passos abaixo:
+
+1.  **Baixar o Código:** use a opção **Download ZIP**.
+2.  **Descompactar:** Descompacte o arquivo ZIP em uma pasta no seu computador.
+3.  **Configurar o Ambiente:** Abra o Terminal/Prompt de Comando e vá até a pasta descompactada e instale as dependências:
+   
+    ```bash
+    pip install -r requirements.txt
+    ```
+4.  **Executar o Script:** Execute o arquivo principal:
+    ```bash
+    python [Seu-Arquivo].py
+    ```
+
   
