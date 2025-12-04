@@ -20,16 +20,25 @@ em uma imagem de tamanho 900x1200.
 ## Instalação
 para testar o projeto, siga os passos abaixo:
 
-1.  **Baixar o Código:** use a opção **Download ZIP**.
-2.  **Descompactar:** Descompacte o arquivo ZIP em uma pasta no seu computador.
-3.  **Configurar o Ambiente:** Abra o Terminal/Prompt de Comando e vá até a pasta descompactada e instale as dependências:
+1.  Baixar o Código: use a opção **Download ZIP**.
+2.  Descompactar: Descompacte o arquivo ZIP em uma pasta no seu computador.
+3.  Acesso a pasta via terminal: Abra o Terminal/Prompt de Comando e vá até a pasta descompactada:
    
+   
+    ```bash
+    cd [caminho da sua pasta]
+    ```
+    
+4.  Configurando o ambiente: Faça a instalação das bibliotecas na versões adequadas pelo requirements.txt:
     ```bash
     pip install -r requirements.txt
     ```
-4.  **Executar o Script:** Execute o arquivo principal:
+
+    
+5.  Executar o código: Execute o arquivo principal:
     ```bash
-    python [Seu-Arquivo].py
+    python Mandelbrot.py
     ```
+   
 
   
