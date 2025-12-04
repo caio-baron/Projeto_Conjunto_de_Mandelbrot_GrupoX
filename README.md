@@ -18,18 +18,18 @@ em uma imagem de tamanho 900x1200.
 *  * as versões das bibliotecas utilizadas se encontram no arquivo requirements.txt
 
 ## Instalação
-para testar o projeto, siga os passos abaixo:
+para testar o projeto, temos um passo a passo:
 
-1.  Baixe o Código: use a opção Download ZIP.
+1.  Baixar o Código: use a opção Download ZIP.
 2.  Descompactar: Descompacte o arquivo ZIP em uma pasta no seu computador.
-3.  Acesso da pasta via terminal: Abra o Terminal/Prompt de Comando e vá até a pasta descompactada:
+3.  Acessar da pasta via terminal: Abra o Terminal/Prompt de Comando e vá até a pasta descompactada:
    
    
     ```bash
     cd [caminho da sua pasta]
     ```
     
-4.  Configurando o ambiente: Faça a instalação das bibliotecas na versões adequadas pelo requirements.txt também no Prompt de comando:
+4.  Configurar o ambiente: Faça a instalação das bibliotecas na versões adequadas pelo requirements.txt também no Prompt de comando:
     ```bash
     pip install -r requirements.txt
     ```
@@ -40,6 +40,12 @@ para testar o projeto, siga os passos abaixo:
     python Mandelbrot.py
     ```
 * Pode-se rodar o código também ao abrir o arquivo Mandelbrot.py na sua IDE de preferência.
+
+ ## Como Utilizar o Script
+ * Ao executar o código será perguntado ao usuário se ele deseja gerar uma figura com ou sem degradê.
+ * Responda com 0 para visualizar sem degradê e 1 para visualizar com degradê.
+ * O código somente aceita entradas 0 ou 1.
+ * Caso o usuário digite algo diferente de 0 ou 1 o programa gera um aviso para que a entrada correta seja adicionada. 
   
  ## Funcionamento do código
   Nessa seção vamos explicar o que cada função personalizada construida pelo grupo está fazendo e como funciona. Além disso será explicado como o processo de gerar a imagem final.
